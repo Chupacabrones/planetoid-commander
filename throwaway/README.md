@@ -3,9 +3,9 @@ Initial testing of Arcadia and some basic game concepts
 
 
 ## goals - burn #1
-1. working clojure code
-2. use *defcomponent* to explore attaching behavior to an object
-3. manipulate objects recursively and test building some algorithmic scenes.
+1. working clojure code .. done
+2. use *defcomponent* to explore attaching behavior to an object .. done
+3. manipulate objects recursively and test building some algorithmic scenes
 
 ## goals - burn #2 basic game components
 1. Planetoid: irregularly shaped objects of various sizes (very small to very large) with heavy mass and varying gravity
