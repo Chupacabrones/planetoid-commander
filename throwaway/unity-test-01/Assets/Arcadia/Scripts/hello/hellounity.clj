@@ -3,6 +3,10 @@
 	(:use arcadia.core)
 	(:import [UnityEngine Application]))
 
-; (defcomponent Hello [^float speed]
-; 	(Update [this]
-; 		(.. this transform) position x))
+
+
+(defcomponent MoveSomething [^float speed]
+	(Update [this]
+		(.. this transform (Translate speed
+									  0
+									  0))))
