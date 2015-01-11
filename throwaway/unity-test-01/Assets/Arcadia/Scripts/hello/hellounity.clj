@@ -30,7 +30,7 @@
 (defn reset-world []
 	(Application/LoadLevel Application/loadedLevel))
 
-(defn do-stuff []
+(comment
 	(reset-world)
 	(set! (.. (object-named "Cube")
 		  (GetComponent hello.hellounity.MoveSomething)
