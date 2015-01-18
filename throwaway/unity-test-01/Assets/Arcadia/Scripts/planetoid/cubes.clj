@@ -1,8 +1,11 @@
 ;; cube testing in unity
+(assembly-load-with-partial-name "System.Drawing")
 (ns planetoid.cubes
 	(:use arcadia.core
 		  planetoid.vectormath)
-	(:import [UnityEngine Input Application Debug Vector3]))
+	(:import 
+		[UnityEngine Input Application Debug Vector3]
+		[System.Drawing Color]))
 
 ;; class vars??
 (def cube1 (object-named "Cube1"))
@@ -39,6 +42,12 @@
 				;; add force to the rigidBody
 				(doto (.. this rigidbody)
 					(.AddForce velocityVec))
+
+				;; debug rays
+				(v-drawray sourcePos velocityVec (.. Color (FromName "Blue")))
+				(v-drawray sourcePos (.. this rigidbody velocity) (.. Color (FromName "Yellow")))
+
+
 				)))
 
 

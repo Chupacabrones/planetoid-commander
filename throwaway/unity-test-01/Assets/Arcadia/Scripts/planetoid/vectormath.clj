@@ -1,9 +1,14 @@
+(assembly-load-with-partial-name "System.Drawing")
 (ns planetoid.vectormath
-	(:import [UnityEngine Vector3]))
+	(:import 
+		[UnityEngine Debug Vector3]
+		[System.Drawing Color]))
 
 ;; ===================
 ;; vector math helpers
 ;; ===================
+;;(import '(System.Drawing Color))
+;;(import 'System.Drawing.Color)
 
 (defn v- ^Vector3 [^Vector3 v1 ^Vector3 v2]
 	(Vector3/op_Subtraction v1 v2))
@@ -32,6 +37,10 @@
 (defn v-seek ^Vector3 [^Vector3 source ^Vector3 target move-distance]
 	(let [directionToTarget (v-normalize (v- target source))]
 		   (v* directionToTarget (float move-distance))))
+
+(defn v-drawray [^Vector3 origin ^Vector3 v ^Color c]
+	(Debug/DrawRay origin (v* v (.. v magnitude)) c))
+
 
 (defn v-test-01 []
 	(let [v1 (Vector3. 1 1 1)
@@ -71,7 +80,7 @@
 	(v-test-01)
 	(v-test-02)
 	(v-test-03)
-	;(v-test-04)
+	;(v-test-04) this one is failing
 	(v-test-05)
 	(v-test-06)
 	(v-test-07)
