@@ -16,6 +16,7 @@
 				(set! (.. light enabled) false)))))
 
 (defn move-update [^MoveSomething this]
+	"lookup any nearby planetoid objects and add up all the forces acting upon me."
 	(.. this transform (Translate (* 
 									(.speed this) 
 									Time/deltaTime)

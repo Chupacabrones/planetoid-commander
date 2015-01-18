@@ -1,0 +1,8 @@
+(ns planetoid.physics
+	(:use arcadia.core)
+	(:import [UnityEngine Input Application Debug Vector3]))
+
+(defcomponent AxialRotator [^float speed]
+	(Update [this]
+		(.. this transform 
+			(Rotate 1 1 speed))))
