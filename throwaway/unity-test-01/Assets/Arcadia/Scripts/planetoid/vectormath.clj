@@ -39,7 +39,7 @@
 		   (v* directionToTarget (float move-distance))))
 
 (defn v-drawray [^Vector3 origin ^Vector3 v ^Color c]
-	(Debug/DrawRay origin (v* v (.. v magnitude)) c))
+	(Debug/DrawRay origin v c))
 
 
 (defn v-test-01 []

@@ -13,11 +13,13 @@
 
 ;; orbit component definition
 (defcomponent Orbit [^float speed]
-	(Awake [this]
-		;; add an initial force in some direction
-		(doto (.. this rigidbody)
-			(.AddForce (Vector3. 0 100 10))))
+	(Awake [this])
 
+	(Update [this]
+		(if (.. Input (GetKeyUp "space"))
+			(doto (.. this rigidbody)
+			(.AddForce (Vector3. 0 50 10)))))
+		
 	(FixedUpdate [this]
 		(let [moveDistance (* (float max-move-distance) Time/deltaTime)
 			  sourcePos (.. this transform position)
@@ -36,19 +38,24 @@
 				;(.. this transform (Translate 0 0 0))
 				
 				;; LookAt cube 1
-				(doto (.. this transform)
-					(.LookAt (.. cube1 transform)))
+				;;(doto (.. this transform)
+				;;	(.LookAt (.. cube1 transform)))
 
 				;; add force to the rigidBody
 				(doto (.. this rigidbody)
 					(.AddForce velocityVec))
 
 				;; debug rays
-				(v-drawray sourcePos velocityVec (.. Color (FromName "Blue")))
-				(v-drawray sourcePos (.. this rigidbody velocity) (.. Color (FromName "Yellow")))
-
+				;;(v-drawray sourcePos (v* (.. velocityVec normalized) (float 100.0)) (.. Color (FromName "Blue")))
+				;;(v-drawray sourcePos (.. this rigidbody velocity) (.. Color (FromName "Yellow")))
+				(Debug/DrawRay 
+					(.. this transform position)
+					(v* (.. this transform (TransformDirection Vector3/forward)) 5))
+				;; can't get Color to return correct type.. keep getting an invalid cast exception
 
 				)))
+
+
 
 
 

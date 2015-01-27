@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TargetController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/PlanetoidRotator.cs" Line="13" Column="1" />
+      <File FileName="../../../SpaceShooter-tutorial/space-shooter/Assets/Scripts/RandomRotator.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Mover.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/LauncherController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/DestroyOnExit.cs" Line="8" Column="3" />
+      <File FileName="../../../SpaceShooter-tutorial/space-shooter/Assets/Scripts/PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/TargetController.cs" Line="20" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

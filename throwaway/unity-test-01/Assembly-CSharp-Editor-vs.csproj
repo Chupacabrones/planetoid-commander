@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{80B8EF6E-3CBE-46AC-3C5E-51C1BAEFBC00}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_1;UNITY_4_6;UNITY_STANDALONE_OSX;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Arcadia\Editor\ClojureAssetPostprocessor.cs" />
+     <Compile Include="Assets\Arcadia\Editor\ClojureConfiguration.cs" />
+     <Compile Include="Assets\Arcadia\Editor\ClojureNewFile.cs" />
+     <Compile Include="Assets\Arcadia\Editor\ClojureRepl.cs" />
+     <None Include="Assets\Arcadia\Scripts\README.txt" />
+     <None Include="Assets\Arcadia\Editor\new-component-template.clj.txt" />
+     <None Include="Assets\Arcadia\Editor\new-file-template.clj.txt" />
+     <None Include="Assets\Arcadia\Libraries\arcadia\README.txt" />
+     <None Include="Assets\Arcadia\Compiled\README.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.1/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="arcadia.config.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Compiled/arcadia.config.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="arcadia.core.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Compiled/arcadia.core.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="arcadia.docs.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Compiled/arcadia.docs.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="arcadia.hydrate.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Compiled/arcadia.hydrate.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="arcadia.internal.editor_interop.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Compiled/arcadia.internal.editor_interop.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="arcadia.internal.map_utils.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Compiled/arcadia.internal.map_utils.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="arcadia.internal.seq_utils.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Compiled/arcadia.internal.seq_utils.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="arcadia.messages.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Compiled/arcadia.messages.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="arcadia.reflect.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Compiled/arcadia.reflect.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="arcadia.repl.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Compiled/arcadia.repl.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.core.reducers.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Compiled/clojure.core.reducers.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="hello.hellounity.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Compiled/hello.hellounity.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="planetoid.camera.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Compiled/planetoid.camera.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="planetoid.cubes.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Compiled/planetoid.cubes.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="planetoid.vectormath.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Compiled/planetoid.vectormath.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.clr.io.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.clr.io.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.clr.shell.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.clr.shell.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.core.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.core.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.core.protocols.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.core.protocols.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.core_clr.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.core_clr.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.core_deftype.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.core_deftype.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.core_print.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.core_print.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.core_proxy.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.core_proxy.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.data.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.data.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="Clojure">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/Clojure.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.edn.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.edn.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.genclass.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.genclass.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.gvec.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.gvec.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.instant.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.instant.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.main.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.main.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.pprint.cl_format.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.pprint.cl_format.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.pprint.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.pprint.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.pprint.column_writer.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.pprint.column_writer.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.pprint.dispatch.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.pprint.dispatch.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.pprint.pprint_base.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.pprint.pprint_base.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.pprint.pretty_writer.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.pprint.pretty_writer.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.pprint.print_table.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.pprint.print_table.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.pprint.utilities.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.pprint.utilities.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.reflect.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.reflect.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.reflect.clr.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.reflect.clr.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.repl.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.repl.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.set.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.set.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.stacktrace.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.stacktrace.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.string.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.string.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.template.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.template.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.test.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.test.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.test.generative">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.test.generative.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.test.junit.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.test.junit.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.test.tap.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.test.tap.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.uuid.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.uuid.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.walk.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.walk.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="clojure.zip.clj">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/clojure.zip.clj.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Dynamic">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/Microsoft.Dynamic.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Scripting.Core">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/Microsoft.Scripting.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Scripting">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/Microsoft.Scripting.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.Scripting.Metadata">
+ <HintPath>/Users/rkilkenny/Workspace/Unity/planetoid-commander/throwaway/unity-test-01/Assets/Arcadia/Internal/Microsoft.Scripting.Metadata.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-vs.csproj">
+      <Project>{48361988-201A-A079-0AD4-E0C5DC051235}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
