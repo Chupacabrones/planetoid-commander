@@ -21,11 +21,14 @@ public class Selector : MonoBehaviour {
     private int boardMask;
     private float maxLaunchDistance = 10.0f;
     private Vector3 lastLaunchPoint;
+    private CameraMovement camMove;
 
     void Awake()
     {
         boardMask = LayerMask.GetMask("BoardLayer");
-        hudDisplay = HUD.GetComponent<HudDisplay>();
+        hudDisplay = transform.GetComponent<HudDisplay>();
+        camMove = Camera.main.GetComponent<CameraMovement>();
+
         HUD.SetActive(false);
     }
 
@@ -59,9 +62,15 @@ public class Selector : MonoBehaviour {
                         Debug.Log("Hit something.. " + hit.transform.tag);
                         if (hit.transform.tag == "Player")
                         {
+                            Debug.Log(hit.point.ToString());
                             //bring up the launch menu
                             selectionState = SelectionState.Selected;
-                            hudDisplay.SetHudAtWorldPosition(hit.transform.position);
+                            hudDisplay.SetHudAtWorldPosition(hit.point);
+                        }
+
+                        if (hit.transform.tag == "Board")
+                        {
+                            camMove.SetLookTarget(hit.point);
                         }
                     }
                 }
@@ -97,6 +106,8 @@ public class Selector : MonoBehaviour {
 
         HUD.SetActive(selectionState == SelectionState.Selected);
 	}
+
+
     void LaunchSomething(Vector3 launchVector)
     {
         Debug.Log("Launched from: " + launchVector.ToString());
